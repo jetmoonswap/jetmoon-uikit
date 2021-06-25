@@ -61,9 +61,9 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
     <Flex alignItems="center">
       <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
         {isPushed ? (
-          <HamburgerCloseIcon width="24px" color={isDark ? "textSubtle" : "#F04D92"} />
+          <HamburgerCloseIcon width="24px" color={isDark ? "textSubtle" : "#c3c350"} />
         ) : (
-          <HamburgerIcon width="24px" color={isDark ? "textSubtle" : "#F04D92"} />
+          <HamburgerIcon width="24px" color={isDark ? "textSubtle" : "#c3c350"} />
         )}
       </MenuButton>
       {isAbsoluteUrl ? (

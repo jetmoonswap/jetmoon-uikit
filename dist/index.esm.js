@@ -2744,7 +2744,7 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#c3c350",
+    primary: "#9a9a3d",
     primaryBright: "#53DEE9",
     primaryDark: "#0098A1",
     secondary: "#7645D9",
@@ -2764,7 +2764,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#08060B", backgroundDisabled: "#3c3742", backgroundAlt: "#163135d4", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#041315de", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#060f10", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#B8ADD2", borderColor: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#041315de", backgroundDisabled: "#3c3742", backgroundAlt: "#163135d4", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#041315de", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#060f10", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#e2ddec", borderColor: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -3322,7 +3322,7 @@ var Logo = function (_a) {
         React.createElement(Icon$14, { className: "mobile-icon" }),
         React.createElement(LogoWithText, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, { alignItems: "center" },
-        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$n, { width: "24px", color: isDark ? "textSubtle" : "#F04D92" })) : (React.createElement(Icon$o, { width: "24px", color: isDark ? "textSubtle" : "#F04D92" }))),
+        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$n, { width: "24px", color: isDark ? "textSubtle" : "#c3c350" })) : (React.createElement(Icon$o, { width: "24px", color: isDark ? "textSubtle" : "#c3c350" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var Logo$1 = React.memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
@@ -3485,7 +3485,7 @@ var SIDEBAR_WIDTH_REDUCED = 56;
 var rainbowAnimation = keyframes(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
 var LinkLabel = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
-    return (isPushed ? (theme.isDark ? theme.colors.textSubtle : '#F04D92') : "transparent");
+    return (isPushed ? (theme.isDark ? theme.colors.textSubtle : '#c3c350') : "transparent");
 });
 var MenuEntry = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
@@ -3498,13 +3498,13 @@ var MenuEntry = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTem
     return (secondary ? theme.isDark ? theme.colors.background : "#fbdee8" : "transparent");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.isDark ? theme.colors.textSubtle : "#F04D92";
+    return theme.isDark ? theme.colors.textSubtle : "#c3c350";
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.isDark ? theme.colors.textSubtle : '#F04D92';
+    return theme.isDark ? theme.colors.textSubtle : '#c3c350';
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.tertiary;
@@ -3603,7 +3603,7 @@ var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd, isDark = _a.isDark;
     return cakePriceUsd ? (React.createElement(PriceLink, { href: "#", target: "_blank" },
         React.createElement(Icon$U, { width: "24px", mr: "8px" }),
-        React.createElement(Text, { color: isDark ? "textSubtle" : "#F04D92", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
+        React.createElement(Text, { color: isDark ? "textSubtle" : "#c3c350", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React.memo(CakePrice);
 var templateObject_1$8;
@@ -3613,7 +3613,7 @@ var SocialLinks = function (_a) {
     var isDark = _a.isDark;
     return (React.createElement(Flex, null, socials.map(function (social, index) {
         var Icon = Icons[social.icon];
-        var iconProps = { width: "24px", color: isDark ? "textSubtle" : "#F04D92", style: { cursor: "pointer" } };
+        var iconProps = { width: "24px", color: isDark ? "textSubtle" : "#c3c350", style: { cursor: "pointer" } };
         var mr = index < socials.length - 1 ? "24px" : 0;
         // if (social.items) {
         //   return (
@@ -3626,7 +3626,7 @@ var SocialLinks = function (_a) {
         //     </Dropdown>
         //   );
         // }
-        return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr, color: "#F04D92" },
+        return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr, color: "#c3c350" },
             React.createElement(Icon, __assign({}, iconProps))));
     })));
 };
