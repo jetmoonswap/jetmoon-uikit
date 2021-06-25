@@ -143,12 +143,12 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "#"
+    href: "https://t.me/jetm_official"
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "#",
+    href: "https://twitter.com/jetmoonswap",
   },
 ];
 
