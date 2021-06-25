@@ -140,7 +140,7 @@ export const PancakeInput = styled.input<InputProps>`
   }
 
   &:checked + label .pancake:nth-child(1) {
-    background: #c639e0;
+    background: #061719;
     box-shadow: 0 ${getScale("pancakeThickness")} 0 ${getScale("pancakeThickness")} #fbbe7c;
     transition-delay: 0.2s;
   }
